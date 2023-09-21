@@ -1,0 +1,187 @@
+/* Estilos predeterminados y fuente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #272AA8;
+    color: #fff;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* Estilos de encabezado */
+header h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 32px;
+}
+
+header h2 {
+    color: #FFF;
+    text-align: left;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 31px 0px 0px 60px;
+}
+
+header h3 {
+    color: #FFF;
+    font-size: 24px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px 0px 0px 60px;
+}
+
+/* Estilos de la lista */
+main ul {
+    list-style: none;
+    margin: 59px 24px 29px 59px;
+}
+main {
+    width: 465px;
+    height: 834px;
+    flex-shrink: 0;
+    background-image: url(img/blob-scene-haikei.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: -6px 6px 15px 6px rgba(0, 0, 0, 0.25);
+}
+main ul li {
+    width: 382px;
+    height: 96px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: #1F2294;
+    margin-top: 29px;
+    box-shadow: -6px 6px 15px 6px rgba(0, 0, 0, 0.25);
+}
+
+.icon {
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0;
+    margin: 35px 0 17px -31px;
+    float: left;
+}
+.delete-icon {
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 17px -40px;
+    float: left;
+}
+.delete-icon:hover {
+    border-radius: 50%;
+    border: 5px solid rgba(246, 64, 64, 0.15);
+}
+main ul li .contenido {
+    text-align: left;
+}
+
+.titulo{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 17px 98px 0px 64px;
+}
+.descripcion{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 0px 0px 0px 64px;
+}
+/* Estilos del botón */
+footer .boton {
+    width: 397px;
+    height: 75px;
+    padding: 15px;
+    font-weight: 700;
+    background-color: #1CB8F8;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+    box-shadow: -6px 6px 15px 6px rgba(0, 0, 0, 0.25);
+    
+}
+
+footer .boton:hover {
+    background-color: #0078a3;
+}
+
+.checkbox-field{
+    opacity: 0;
+}
+.checkbox-label{
+
+    position: absolute;
+    margin: -30px 0 0 120px;
+    font-size: 1em;
+    line-height: 1em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.checkbox-label::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background: #1B40BD;
+}
+.checkbox-label::after{
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 5px;
+    height: 12px;
+    border: solid #0296E5;
+    border-width: 0 6px 6px 0;
+    transition: 0.2s ease;
+    transform: rotate(35deg) scale(1);
+}
+
+.checkbox-field:not(:checked) + .checkbox-label::after{
+    transform: scale(0);
+    opacity: 0;
+}
+
+.checkbox-label:checked + .checkbox-label::after{
+    opacity: 0;
+}
+
+
