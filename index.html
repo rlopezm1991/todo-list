@@ -13,6 +13,7 @@
     <div class="container">
         
         <main>
+            <div>
             <header>
                 <h1>Lista de tareas</h1>
                 <h2>2023</h2>
@@ -69,10 +70,15 @@
                 </li>
             </ul>
             <footer>
-                <button class="boton">Agregar nueva tarea</button>
-            </footer>
-        </main>
+                <button class="boton" id="mostrarDiv">Agregar nueva tarea</button>   
+            </footer>   
+            <!-- Div para agregar nueva tarea (inicialmente oculto) -->
+            <div class="nueva-tarea" id="nuevaTarea">
+                <button class="cerrar-boton" id="cerrarDiv">Cerrar</button>
+            </div>         
+        </main>     
         
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
