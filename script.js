@@ -9,7 +9,7 @@ mostrarDivButton.addEventListener("click", () => {
     // Aplica el efecto de desenfoque al contenido del main
     mainContent.classList.add("blur");
     // Muestra el div
-    nuevaTareaDiv.style.height = "50%";
+    nuevaTareaDiv.style.height = "100%";
 });
 
 // Agrega un manejador de eventos al botón para cerrar el div
