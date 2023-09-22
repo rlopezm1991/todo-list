@@ -71,16 +71,28 @@
                     </div>
                 </li>
             </ul>
-            <footer>
+            
                 <button class="boton" id="mostrarDiv">Agregar nueva tarea</button>   
-            </footer>   
+             
             <!-- Div para agregar nueva tarea (inicialmente oculto) -->
             <div class="nueva-tarea" id="nuevaTarea">
-                <button class="cerrar-boton" id="cerrarDiv">Cerrar</button>
-            </div>    
-            <div class="nueva-tarea" id="nuevaTarea2">
-                <button class="cerrar-boton" id="cerrarDiv">Cerrar</button>
-            </div>      
+                <button class="botonCerrar" id="cerrarDiv"><embed class="arrowIcon" src="img/left-arrow-svgrepo-com.svg" /></button>
+                <div class="form-add">
+                    <p class="lblForm">Nueva tarea</p>
+                    <p class="tituloForm">Ingresa el título y descripción</p>
+                    <input type="text" class="txt" placeholder="Título">
+                    <br>
+                    <input type="text" class="txt" placeholder="Descripción">
+                    <p class="lblForm" style="margin-top: -15px;">Tipo de tarea</p>
+                    <div class="contenedor-tipos">
+                        <div class="tipoTarea">1</div>
+                        <div class="tipoTarea">2</div>
+                        <div class="tipoTarea">3</div>
+                        <div class="tipoTarea">4</div>
+                    </div>
+                </div>  
+                <button class="boton">Agregar</button>      
+            </div>                    
         </main>     
         
     </div>
